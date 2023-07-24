@@ -272,7 +272,9 @@ if active_debug then
         require "custom.configs.mason_dap"
       end,
     },
-    { "mfussenegger/nvim-dap" },
+    {
+      "mfussenegger/nvim-dap",
+    },
     {
       "mfussenegger/nvim-dap-python",
       ft = "python",
@@ -294,7 +296,6 @@ if active_debug then
       },
       config = function(_, opts)
         require("dap-go").setup(opts)
-        require("core.utils").load_mappings "dap_go"
       end,
     },
   }
@@ -443,7 +444,6 @@ local plugins = {
     ft = "go",
     config = function(_, opts)
       require("gopher").setup(opts)
-      require("core.utils").load_mappings "gopher"
     end,
     build = function()
       vim.cmd [[silent! GoInstallDeps]]
