@@ -12,6 +12,14 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "rust",
+    "java",
+    "kotlin",
+    "python",
+    "go",
+    "sql",
+    "json",
+    "yaml",
   },
   indent = {
     enable = true,
@@ -26,6 +34,8 @@ M.mason = {
     -- lua stuff
     "lua-language-server",
     "stylua",
+    -- rust
+    -- "rust-analyzer",
     -- go
     "gopls",
     "gofumpt",
