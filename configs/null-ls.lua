@@ -27,6 +27,7 @@ local sources = {
   b.diagnostics.ruff,
 
   -- go
+  b.diagnostics.golangci_lint,
   b.formatting.gofumpt,
   b.formatting.goimports_reviser,
   b.formatting.golines,
