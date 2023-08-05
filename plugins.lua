@@ -503,6 +503,13 @@ local plugins = {
     cmd = "SymbolsOutline",
     opts = {},
   },
+  {
+    "vladdoster/remember.nvim",
+    config = function(_, opts)
+      require("remember").setup(opts)
+    end,
+    event = "BufReadPost",
+  },
 }
 
 return plugins
