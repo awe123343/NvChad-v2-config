@@ -480,7 +480,10 @@ local plugins = {
       vim.cmd [[silent! GoInstallDeps]]
     end,
   },
-  { "mfussenegger/nvim-jdtls", event = "BufRead" },
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = { "java", "kt" },
+  },
   {
     "tpope/vim-fugitive",
     event = "VeryLazy",
