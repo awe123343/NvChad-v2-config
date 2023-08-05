@@ -481,8 +481,10 @@ local plugins = {
     end,
   },
   { "mfussenegger/nvim-jdtls", event = "BufRead" },
-  { "tpope/vim-fugitive", event = "BufRead" },
-  { "braxtons12/blame_line.nvim", event = "BufRead" },
+  {
+    "tpope/vim-fugitive",
+    event = "VeryLazy",
+  },
   {
     "linux-cultist/venv-selector.nvim",
     dependencies = {
