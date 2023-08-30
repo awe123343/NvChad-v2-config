@@ -510,6 +510,10 @@ local plugins = {
     end,
     event = "BufReadPost",
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    event = "VeryLazy",
+  },
 }
 
 return plugins
